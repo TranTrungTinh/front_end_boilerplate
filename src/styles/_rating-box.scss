@@ -1,0 +1,39 @@
+.rating-box {
+	margin-top: -5px;
+	font-size: 26px;
+	line-height: 42px;
+	font-weight: 600;
+	font-family: $h-font-family;
+	color: $headings-color;
+	text-align: center;
+	& > *:not(:first-child) {
+		margin: 0 0 12px;
+		@include media-breakpoint-down(sm) {
+			margin: 0;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		& > * {
+			padding: 7px 0;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.rating-number {
+		font-size: 61px;
+		line-height: 1em;
+		font-weight: 600;
+		color: theme-color("primary");
+	}
+	.star-rating {
+		[class*='icon-']{
+			font-size: 16px;
+			padding-right: 2px;
+		}
+	}
+}

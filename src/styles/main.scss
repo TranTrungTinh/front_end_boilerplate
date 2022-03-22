@@ -1,0 +1,137 @@
+/*-------------------------------
+[Table of contents]
+
+1. Bootstrap Core
+2. Theme Styles
+	2.1 Typography
+	2.2 Form Elements
+	2.3 Preloader
+	2.4 Page Structure
+	2.5 Header
+	2.6 Footer
+	2.7 Main Slider
+	2.8 Services
+	2.9 Special Offer
+	2.10 Banner
+	2.11 FAQ
+	2.12 Newsletter
+	2.13 Modal
+	2.14 Simple Slider
+	2.15 Filters
+	2.16 Review
+	2.17 Gallery
+	2.18 Slick Carousel
+	2.19 Blog;
+	2.20 Calendar Skin
+	2.21 Contact Box
+	2.22 Quick Links
+	2.23 Schedule
+	2.24 Doctop Box
+
+-----------------------------------*/
+// 1. Bootstrap Core
+// bootstrap functions
+@import "bootstrap/functions";
+// template bootstrap variables
+@import "bootstrap/variables";
+// template variables
+@import "variables";
+// template bootstrap components
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+//@import "bootstrap/card";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+//@import "bootstrap/jumbotron";
+@import "bootstrap/alert";
+//@import "bootstrap/progress";
+//@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+//@import "bootstrap/carousel";
+@import "bootstrap/utilities";
+
+// 2. Theme Styles
+// 2.1 Typography
+@import '_typography';
+@import '_counters';
+// 2.2 Form Elements
+@import '_form';
+// 2.3 Preloader
+@import '_loader';
+// 2.4 Page Structure
+@import '_structure';
+// 2.5 Header
+@import '_header';
+// 2.6 Footer
+@import '_footer';
+// 2.7 Main Slider
+@import '_slider';
+// 2.8 Services
+@import '_service-box';
+@import '_service-card';
+@import '_service-card-style2';
+@import '_service-tabs';
+@import '_service-single';
+@import '_department-tabs';
+// 2.9 Special Offer
+@import '_special-card';
+// 2.10 Banner
+@import '_banner';
+// 2.11 FAQ
+@import '_faq';
+// 2.12 Newsletter
+@import '_newsletter';
+// 2.13 Modal
+@import '_modal';
+// 2.14 Simple Slider
+@import '_slider_gallery';
+// 2.15 Filters
+@import '_filters';
+// 2.16 Review
+@import '_rating-box';
+@import '_review';
+@import '_testimonial';
+// 2.17 Gallery
+@import '_gallery';
+@import '_smile-gallery';
+// 2.18 Slick Carousel
+@import '_slick';
+// 2.19 Blog
+@import '_blog';
+// 2.20 Calendar Skin
+@import '_calendar';
+// 2.21 Contact Box
+@import '_contact-box';
+// 2.22 Quick Links
+@import '_quick_links';
+// 2.23 Schedule
+@import '_schedule';
+@import '_doctor-box';
+// 2.24 Doctop Box
+@import '_doctor-page';
+// 2.25 Shop
+@import '_shop';
+// 2.26 Price
+@import '_price-box';
+// 3. Medlab Layout
+@import '_app';

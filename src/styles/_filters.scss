@@ -1,0 +1,149 @@
+.filters-toggle {
+	position: absolute;
+	z-index: 1000;
+	top: 18px;
+	right: 0;
+	display: block;
+	width: 36px;
+	height: 36px;
+	background: theme-color("primary");
+	color: #fff;
+	font-size: 18px;
+	line-height: 42px;
+	text-align: center;
+	cursor: pointer;
+	&:hover {
+		background: $body_color;
+		text-decoration: none;
+		color: #fff;
+	}
+	@include media-breakpoint-down(lg) {
+		top: 12px;
+	}
+	@include media-breakpoint-down(md) {
+		top: 8px;
+		right: 0;
+	}
+	@include media-breakpoint-down(sm) {
+		top: 0;
+	}
+}
+.filters-slide {
+	position: fixed;
+	top: 0;
+	right: -304px;
+	height: 100vh;
+	padding: 15px 0 0;
+	z-index: 1045;
+	width: 304px;
+	height: 100%;
+	color: #fff;
+	transition: all 0.3s;
+	background: theme-color("primary");
+	h3,
+	h4 {
+		color: #fff;
+	}
+}
+.filters-slide-inside {
+	height: 100%;
+	overflow-y: scroll;
+	padding: 0 32px 0;
+}
+.filters-slide-close {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 12px;
+	z-index: 1;
+	&:hover {
+		opacity: .5;
+	}
+}
+.filters-slide.active {
+	right: 0;
+}
+.noUi-horizontal {
+	height: 6px;
+}
+.noUi-horizontal .noUi-handle {
+	width: 15px;
+	height: 15px;
+	left: -7.5px;
+	top: -5px;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	background: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0 0 2px rgba(theme-color("primary"), .5);
+}
+.noUi-target {
+	border-radius: 0;
+	border: 0;
+	box-shadow: none;
+	background: rgba(255, 255, 255, .2);
+	margin-bottom: 12px;
+}
+.noUi-origin {
+	border-radius: 0;
+	box-shadow: none;
+}
+.noUi-connect {
+	background: rgba(255, 255, 255, .7);
+	border: 0;
+	border-radius: 0;
+	height: 6px;
+	-webkit-transition: background 450ms;
+	transition: background 450ms;
+}
+.noUi-handle:before,
+.noUi-handle:after {
+	display: none;
+	border: 0;
+	border-radius: 0;
+	-webkit-transition: background 450ms;
+	transition: background 450ms;
+}
+.side-block {
+	h5 {
+		bottom: 0;
+	}
+	label {
+		width: 100%;
+		font-size: 14px;
+		line-height: 28px;
+	}
+}
+.side-block + .side-block {
+	margin-top: 30px;
+}
+.overlay {
+	position: fixed;
+	top: 0;
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0);
+}
+.btn-filter {
+	background: #fff;
+	border: 2px solid #fff;
+	padding: 8px 24px;
+	color: theme-color("primary");
+	&:hover {
+		background: transparent;
+		color: #fff;
+	}
+}
+.btn-filter-invert {
+	background: transparent;
+	color: #fff;
+	&:hover {
+		background: #fff;
+		color: theme-color("primary");
+	}
+}

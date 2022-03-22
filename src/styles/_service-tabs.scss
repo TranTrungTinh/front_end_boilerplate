@@ -1,0 +1,125 @@
+.services-tab-wrap {
+	padding: 60px 44px 75px 0;
+	width: 570px;
+	@include media-breakpoint-down(lg) {
+		width: 100%;
+		min-width: 500px;
+		padding: 50px 30px;
+	}
+	@include media-breakpoint-down(md) {
+		padding: 50px 30px 50px 15px;
+	}
+	@include media-breakpoint-down(sm) {
+		min-width: inherit;
+		padding: 0 20px 30px;
+	}
+	position: relative;
+	.nav-pills {
+		flex-wrap: nowrap;
+		@include media-breakpoint-down(sm) {
+			margin-right: auto;
+			padding-left: 0;
+			flex-wrap: wrap;
+		}
+		.nav-link {
+			position: relative;
+			min-width: inherit;
+			height: 39px;
+			margin: 0 20px 0 0;
+			padding: 0 20px 0 0;
+			font-size: 15px;
+			line-height: 18px;
+			font-weight: 600;
+			font-family: $h-font-family;
+			border: 0;
+			background: transparent;
+			color: #444;
+			&:hover {
+				background: transparent !important;
+				color: #000;
+			}
+			@include media-breakpoint-down(xs) {
+				width: auto;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 4px;
+				right: 0;
+				width: 2px;
+				height: 9px;
+				background: #a9aaaa;
+			}
+			&:last-child {
+				margin: 0;
+				padding: 0;
+				&:after {
+					display: none;
+				}
+			}
+		}
+		.nav-link.active {
+			color: theme-color("primary");
+			box-shadow: none;
+		}
+	}
+}
+body:not(.touch) .services-tab-wrap .nav-link:hover {
+	background: #fff;
+	border-color: #e6e6e6;
+}
+.services-wrap {
+	padding: 60px 35px 60px 0;
+	width: 570px;
+	@include media-breakpoint-down(lg) {
+		width: 100%;
+		padding: 50px 30px;
+	}
+	@include media-breakpoint-down(md) {
+		padding: 50px 30px 50px 15px;
+	}
+	@include media-breakpoint-down(sm) {
+		min-width: inherit;
+		padding: 0 20px 30px;
+	}
+	position: relative;
+}
+.services-wrap1 {
+	padding: 60px 35px 140px 0;
+	width: 570px;
+	@include media-breakpoint-down(lg) {
+		width: 100%;
+		padding: 50px 30px;
+	}
+	@include media-breakpoint-down(md) {
+		padding: 50px 30px 50px 15px;
+	}
+	@include media-breakpoint-down(sm) {
+		min-width: inherit;
+		padding: 0 20px 30px;
+	}
+	position: relative;
+}
+.service-tab-banner {
+	overflow: hidden;
+	@include media-breakpoint-down(md) {
+		img {
+			transform: translateX(-15%);
+			max-height: 530px;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		margin-left: -20px;
+		margin-right: -20px;
+		img {
+			width: 100%;
+			max-height: 450px;
+			transform: translateX(0);
+		}
+	}
+}
+.service-tab-banner-alt.bg-left {
+	@include media-breakpoint-only(lg) {
+		background-position: -7% center;
+	}
+}

@@ -1,0 +1,53 @@
+.service-card-style2 {
+	height: 100%;
+	max-width: 370px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 40px 33px 40px;
+	border: 5px solid #f6f7f5;
+	@include transition(.2s);
+	@include media-breakpoint-down(sm) {
+		padding: 25px 20px 25px;
+	}
+	& > * {
+		margin-bottom: 0;
+	}
+	& > *:not(:first-child) {
+		margin-top: 22px;
+	}
+	.service-card-icon {
+		font-size: 48px;line-height: 1em;
+		color: theme-color("primary");
+	}
+	.service-card-name {
+		font-size: 20px;
+		line-height: 1em;
+		@include media-breakpoint-down(md) {
+			font-size: 18px;
+			line-height: 1.2em;
+		}
+	}
+	.service-card-name a:hover {
+		text-decoration: none;
+		color: theme-color("primary");
+	}
+	& > ul.marker-list-md:not(:first-child){
+		margin-top: 15px;
+	}
+	ul.marker-list-md li {
+		font-size: 16px;
+		@include media-breakpoint-down(md) {
+			font-size: 15px;
+			line-height: 20px;
+		}
+	}
+	ul.marker-list-md li:not(:last-child) {
+		margin-bottom: 16px;
+		@include media-breakpoint-down(md) {
+			margin-bottom: 8px;
+		}
+	}
+	&:hover {
+		border: 5px solid lighten(desaturate(adjust-hue(theme-color("primary"), -3), 3.23), 13.53);
+	}
+}

@@ -1,0 +1,82 @@
+.doctor-info {
+	display: flex;
+	@include media-breakpoint-down(md) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		& > * + * {
+			margin-top: 5px;
+		}
+	}
+	&-phone {
+		padding: 0 30px;
+		font-size: 18px;
+		line-height: 37px;
+		font-family: $h-font-family;
+		font-weight: 600;
+		color: $headings-color;
+		a {
+			color: $headings-color;
+			text-decoration: none;
+			&:hover {
+				color: theme-color("primary");
+			}
+		}
+		[class*='icon-'] {
+			position: relative;
+			top: -1px;
+			padding-right: 7px;
+			font-size: 11px;
+			color: theme-color("primary");
+		}
+	}
+	&-name {
+		flex: 1;
+		h3 {
+			font-size: 32px;
+			line-height: 1em;
+			margin-bottom: 18px;
+		}
+		h6 {
+			font-size: 16px;
+			line-height: 1em;
+			margin-bottom: 0;
+			color: theme-color("primary");
+		}
+	}
+}
+.doctor-info-social {
+	font-size: 15px;
+	line-height: 37px;
+	a {
+		display: inline-block;
+		width: 37px;
+		height: 37px;
+		color: theme-color("primary");
+		background-color: #fff;
+		text-align: center;
+		border-radius: 50%;
+		@include transition (.2s);
+		&:hover {
+			background-color: theme-color("primary");
+			color: #fff;
+			text-decoration: none;
+			box-shadow: 0 0 0 3px rgba(theme-color("primary"), .2);
+		}
+	}
+}
+.doctor-review-row {
+	display: flex;
+	align-items: center;
+	& > * {
+		padding-right: 15px;
+	}
+	.star-rating {
+		color: theme-color("primary");
+		position: relative;
+		top: -2px;
+	}
+}
+.doctor-page-table, .doctor-page-table td {
+	border: 0;
+}

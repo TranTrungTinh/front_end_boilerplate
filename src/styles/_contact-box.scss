@@ -1,0 +1,47 @@
+.contact-box {
+	background-color: lighten(theme-color("primary"), 11%);
+	padding: 28px 25px;
+	height: 100%;
+	&, & a {color: #fff;}
+	&-title {
+		margin-bottom: 18px;
+		color: #fff;
+	}
+	ul.icn-list {
+		font-size: 15px;
+		line-height: 26px;
+		li {
+			padding-left: 30px;
+			b {
+				color: #fff;
+			}
+		}
+		li:not(:last-child) {
+			margin-bottom: 5px;
+		}
+		[class*='icon-']{
+			top: 5px;
+			font-size: 17px;
+			color: lighten(theme-color("primary"), 40%);
+		}
+	}
+}
+.contact-box-2 {
+	background-color: lighten(theme-color("primary"), 17%);
+}
+.question-box {
+	background-color: #f8f8f8;
+	padding: 18px 20px;
+	&-title {
+		margin-bottom: 18px;
+	}
+	.form-control:not(:focus), .form-control:active {
+		border-color: #fff;
+	}
+	.form-control + * {
+		margin-top: 6px;
+	}
+	textarea.form-control  {
+		height: 100px;
+	}
+}

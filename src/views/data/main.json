@@ -1,0 +1,50 @@
+{
+  "metaInfo": {
+    "companyEmail": "info@precisionmed.com.vn",
+    "companyLocation": "35-37 Nguyễn Thị Thập, Phường Tân Hưng, Quận 7, Tp. Hồ Chí Minh",
+    "companyPhone": "028 626 38 999"
+  },
+  "navbars": [
+    {
+      "id": "home",
+      "name": "Trang chủ",
+      "to": "index.html"
+    },
+    {
+      "id": "service",
+      "name": "Dịch vụ",
+      "to": "services.html"
+    },
+    {
+      "id": "posts",
+      "name": "Thông tin",
+      "to": "#",
+      "children": [
+        {
+          "id": "ehr-resources",
+          "name": "EHR",
+          "to": "ehr-resources.html"
+        },
+        {
+          "id": "gen-resources",
+          "name": "Gen",
+          "to": "gen-resources.html"
+        },
+        {
+          "id": "algorithum-resources",
+          "name": "Thuật toán",
+          "to": "algorithum-resources.html"
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "name": "Về chúng tôi",
+      "to": "about.html"
+    }
+  ],
+  "testObj": {
+    "name": "One",
+    "age": 15
+  }
+}

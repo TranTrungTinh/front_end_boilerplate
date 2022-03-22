@@ -1,0 +1,89 @@
+{{assign 'currentActive' activeTab}}
+<header class="header">
+  <div class="header-quickLinks js-header-quickLinks d-lg-none">
+    <div class="quickLinks-top js-quickLinks-top"></div>
+    <div class="js-quickLinks-wrap-m">
+    </div>
+  </div>
+  <div class="header-topline d-none d-lg-flex">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-auto d-flex align-items-center">
+          <div class="header-info">
+            <i class="icon-placeholder2"></i>
+            <a target="_blank" href="https://www.google.com/maps/place/35+Nguy%E1%BB%85n+Th%E1%BB%8B+Th%E1%BA%ADp,+T%C3%A2n+H%C6%B0ng,+Qu%E1%BA%ADn+7,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7404987,106.697384,18.23z/data=!4m5!3m4!1s0x31752fa1f0dc262b:0xf3aecf35edae578e!8m2!3d10.7406196!4d106.6988464">
+              {{main.metaInfo.companyLocation}}
+            </a>
+          </div>
+          <div class="header-phone"><i class="icon-telephone"></i><a href="tel:{{main.metaInfo.companyPhone}}">{{main.metaInfo.companyPhone}}</a></div>
+          <div class="header-info"><i class="icon-black-envelope"></i><a href="mailto:{{main.metaInfo.companyEmail}}">{{main.metaInfo.companyEmail}}</a></div>
+        </div>
+        <div class="col-auto ml-auto d-flex align-items-center">
+            <span class="header-social">
+              <a href="#" class="hovicon"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="hovicon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="hovicon"><i class="fab fa-youtube"></i></a>
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-content">
+    <div class="container">
+      <div class="row align-items-lg-center">
+        <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarNavDropdown">
+          <span class="icon-menu"></span>
+        </button>
+        <div class="col-lg-auto col-lg-2 d-flex align-items-lg-center">
+          <a href="{{indexDir}}/index.html" class="header-logo">
+            <img src="https://stag-admin.ehr.sk-global.io/logo_blue.svg?v2" alt="" class="img-fluid" style="width: 180px; object-fit: cover;">
+          </a>
+        </div>
+        <div class="col-lg ml-auto header-nav-wrap">
+          <div class="header-nav js-header-nav">
+            <nav class="navbar navbar-expand-lg btco-hover-menu">
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                  {{#each main.navbars as |nav|}}
+
+                  {{#ifCond nav.id @root.currentActive}}
+                  <li class="nav-item active">
+                  {{else}}
+                  <li class="nav-item">
+                  {{/ifCond}}
+
+                    {{#if nav.children}}
+                    <a href="javascript:;" class="nav-link dropdown-toggle" data-toggle="dropdown">{{nav.name}}</a>
+                    <ul class="dropdown-menu">
+                      {{#each children}}
+                      <li><a class="dropdown-item" href="{{indexDir}}/{{this.to}}">{{this.name}}</a></li>
+                      {{/each}}
+                    </ul>
+                    {{else}}
+                    <a class="nav-link" href="{{indexDir}}/{{nav.to}}">{{nav.name}}</a>
+
+                    {{/if}}
+                  </li>
+                  {{/each}}
+                  
+                  <li class="nav-item">
+                    <a href="javascript:;" class="nav-link" data-toggle="dropdown">
+                      <img class="nav-link--icon" src="{{assets}}/img/flag/flag_vi.png" alt="">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="min-width: 120px;">
+                      <a class="dropdown-item" href="#">
+                        <img src="{{assets}}/img/flag/flag_en.png" alt="">
+                        <span class="pl-1">Tiếng Anh</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

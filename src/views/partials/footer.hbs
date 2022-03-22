@@ -1,0 +1,46 @@
+<div class="footer mt-0 bg-white">
+  <div class="container">
+    <div class="row py-1 py-md-2 px-lg-0">
+      <div class="col-lg-6 pt-lg-3 pb-0">
+        <div class="row flex-column flex-md-row flex-lg-column">
+          <div class="col-md col-lg-auto">
+            <div class="footer-logo">
+              <img src="https://stag-admin.ehr.sk-global.io/logo_blue.svg?v2" alt="" class="img-fluid" width="200px">
+            </div>
+            <div class="mt-2 mt-lg-0"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-6 pb-0">
+        <h3>Liên hệ của chúng tôi</h3>
+        <div class="h-decor"></div>
+        <ul class="icn-list">
+          <li >
+            <i class="icon-placeholder2"></i>
+            <a target="_blank" class="theme-color" href="https://www.google.com/maps/place/35+Nguy%E1%BB%85n+Th%E1%BB%8B+Th%E1%BA%ADp,+T%C3%A2n+H%C6%B0ng,+Qu%E1%BA%ADn+7,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7404987,106.697384,18.23z/data=!4m5!3m4!1s0x31752fa1f0dc262b:0xf3aecf35edae578e!8m2!3d10.7406196!4d106.6988464">
+              {{main.metaInfo.companyLocation}}
+            </a>
+          </li>
+          <li>
+            <i class="icon-telephone"></i>
+            <a href="tel:{{main.metaInfo.companyPhone}}">{{main.metaInfo.companyPhone}}</a>
+          </li>
+          <li>
+            <i class="icon-black-envelope"></i>
+            <a href="mailto:{{main.metaInfo.companyEmail}}">{{main.metaInfo.companyEmail}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row text-center text-md-left">
+        <div class="col-sm">Copyright © 2022 <a href="#">PrecisionMed</a><span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="col-sm-auto ml-auto"><span class="d-none d-sm-inline">Liên hệ&nbsp;&nbsp;&nbsp;</span><i class="icon-telephone"></i>&nbsp;&nbsp;<b><a href="tel:{{main.metaInfo.companyPhone}}">{{main.metaInfo.companyPhone}}</a></b></div>
+      </div>
+    </div>
+  </div>
+</div>

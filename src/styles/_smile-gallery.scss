@@ -1,0 +1,77 @@
+.smile-popover {
+	margin-top: -100px;
+	width: 346px;
+	min-height: 253px;
+	background-color: #fff;
+	border-radius: 0;
+	pointer-events: none;
+	@include media-breakpoint-down(xs) {
+		width: 240px;
+		min-height: 175px;
+	}
+	.inner-circles-loader {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.popover-body {
+		padding: 0;
+		position: relative;
+		height: 100%;
+		width: 100%;
+		border: 8px solid #fff;
+		background-color: #fff;
+	}
+	.arrow {
+		top: 0 !important;
+		@include media-breakpoint-down(xs) {
+			display: none;
+		}
+	}
+	.arrow:before {
+		display: none;
+	}
+	&[x-placement^="right"] {
+		left: -60px !important;
+	}
+	&[x-placement^="left"] {
+		left: 60px !important;
+	}
+	&[x-placement^="right"] .arrow:after {
+		left: -40px !important;
+		top: 30px !important;
+		border-right-color: #fff !important;
+		border-width: 24px;
+	}
+	&[x-placement^="left"] .arrow:after {
+		right: -40px !important;
+		top: 30px !important;
+		border-left-color: #fff !important;
+		border-width: 24px;
+	}
+	img {
+		position: relative;
+		z-index: 100;
+		max-width: 100%;
+	}
+	&.fade {
+		@include transition (opacity 0s);
+	}
+	&.fade.show {
+		@include transition (opacity .75s);
+	}
+}
+.gallery-popover-link {
+	display: block;
+	width: 100%;
+	background: #000;
+	img {
+		@include transition (opacity .75s);
+		max-width: none;
+		width: 100%;
+	}
+	&.darken img {
+		opacity: .75;
+	}
+}

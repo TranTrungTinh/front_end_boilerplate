@@ -1,0 +1,24 @@
+@font-face {
+  font-family: SVN-Gotham;
+  src: url("./SVN-Gotham\ Light.otf") format("opentype"),
+       url("./SVN-Gotham\ Light.ttf")  format("truetype");
+}
+
+@font-face {
+  font-family: SVN-Gotham;
+  font-weight: 600;
+  src: url("SVN-Gotham\ Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: SVN-Gotham;
+  font-weight: 700;
+  src: url("./SVN-Gotham\ Bold.otf") format("opentype"),
+       url("./SVN-Gotham\ Bold.ttf")  format("truetype"),;
+}
+
+@font-face {
+  font-family: SVN-Gotham;
+  font-weight: 800;
+  src: url("./SVN-Gotham\ Black.otf") format("opentype");
+}

@@ -1,0 +1,29 @@
+// stylelint-disable declaration-no-important
+@mixin primary-gradient($angel: to right bottom, $from: #2196F3, $to: #673AB7) {
+  background: $from; /* fallback for old browsers */
+  background: -webkit-linear-gradient($angel, $from, $to);
+  background: linear-gradient($angel, $from, $to);  
+}
+
+@each $color, $value in $theme-colors {
+  @include bg-variant(".bg-#{$color}", $value);
+}
+
+@if $enable-gradients {
+  @each $color, $value in $theme-colors {
+    @include bg-gradient-variant(".bg-gradient-#{$color}", $value);
+  }
+}
+
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.bg-primary-gradient {
+  @include primary-gradient;
+}
+
